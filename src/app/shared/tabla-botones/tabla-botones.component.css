@@ -1,0 +1,15 @@
+<div class="d-flex justify-content-center align-items-center" style="min-height: 50vh;">
+    @if (post != undefined) {
+      <div class="col-md-4 p-4">
+        <div class="card p-3">
+          <div class="card-body">
+            <h5 class="card-title mb-3">{{post?.title}}</h5> <!-- Margen abajo del título -->
+            <p class="card-text mb-3">{{post?.body}}</p> <!-- Margen abajo del texto -->
+          </div>
+          <button type="button" class="btn btn-primary mt-3" [routerLink]="'/tabla'">Return</button>
+        </div>
+      </div>
+    } @else {
+      <h1>No se encontró</h1>
+    }
+  </div>
